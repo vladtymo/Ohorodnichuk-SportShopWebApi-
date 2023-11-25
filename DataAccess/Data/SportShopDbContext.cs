@@ -21,20 +21,8 @@ namespace DataAccess.Data
 
          //optionsBuilder.UseSqlServer(@"Data Source=JULIAOHORODNICH\\SQLEXPRESS;Initial Catalog=SportShop_WebAPI;Trusted_Connection=True;MultipleActiveResultSets=true");
 
-<<<<<<< HEAD
-            optionsBuilder.UseSqlServer("Server=tcp:bulkywebdb.database.windows.net,1433;Initial Catalog=sportshopwebapi;Persist Security Info=False;User ID=admins;Password=Admin123*;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
-        }
-=======
-                     optionsBuilder.UseSqlServer(@"Data Source=JULIAOHORODNICH\SQLEXPRESS;
-                                        Initial Catalog=SportShop_WebAPI;
-                                        Integrated Security=True;
-                                        Connect Timeout=2;
-                                        Encrypt=False;
-                                        TrustServerCertificate=False;
-                                        ApplicationIntent=ReadWrite;
-                                        MultiSubnetFailover=False");
+            optionsBuilder.UseSqlServer("Server=tcp:bulkywebdb.database.windows.net,1433;Initial Catalog=BulkyDb;Persist Security Info=False;User ID=admins;Password=Admin123*;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
       }
->>>>>>> 40a591e16c7dd51f30cecd7eb1f4a496c1ad8430
 
       protected override void OnModelCreating(ModelBuilder modelBuilder)
       {
