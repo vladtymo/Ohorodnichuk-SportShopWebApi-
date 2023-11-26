@@ -64,6 +64,13 @@ builder.Services.AddAuthentication(options =>
 
 var app = builder.Build();
 
+// apply migrations (test)
+using (var scope = app.Services.CreateScope())
+{
+   var db = scope.ServiceProvider.GetRequiredService<SportShopDbContext>();
+   db.Database.Migrate();
+}
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
