@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'sportshopwebapi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E8F46C8FF8B84DF18311EE9990074F2A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_ABF10170089545CB9699973951178CAF }}
           package: .
